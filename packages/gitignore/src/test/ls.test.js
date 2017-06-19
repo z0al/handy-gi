@@ -1,14 +1,15 @@
 import ls from '../ls'
-import { exclude } from '../config.json'
+
+const dir = process.cwd()
 
 describe('ls', () => {
   it('lists all files', async () => {
-    const files = await ls('.', exclude)
+    const files = await ls(dir)
     expect(files).not.toEqual([])
   })
   it('excludes given patterns', async () => {
-    const files = await ls('.', ['package.json', ...exclude])
-    expect(files.indexOf('node_modules/.bin')).toEqual(-1)
+    const files = await ls(dir, ['package.json'])
+    expect(files.indexOf('node_modules/jest')).toEqual(-1)
     expect(files.indexOf('package.json')).toEqual(-1)
   })
 })
