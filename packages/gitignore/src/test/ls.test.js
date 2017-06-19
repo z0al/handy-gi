@@ -1,6 +1,7 @@
 import ls from '../ls'
+import { join } from 'path'
 
-const dir = process.cwd()
+const dir = join(__dirname, '..', '..')
 
 describe('ls', () => {
   it('lists all files', async () => {
