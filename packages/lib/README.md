@@ -1,6 +1,6 @@
 # Auto `.gitignore` generator
 
-A package that auto-magically detects and generates suitable `.gitignore` file based on a given directory content. It utilizes official GitHub's [collection] for `.gitignore` templates.
+This package automatically detects and generates suitable `.gitignore` file based on a given directory content. It utilizes official GitHub's [collection] for `.gitignore` templates.
 
 [collection]: https://github.com/github/gitignore
 

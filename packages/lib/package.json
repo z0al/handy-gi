@@ -1,9 +1,9 @@
 {
-  "name": "gi-lib",
+  "name": "@ahmed-taj/gitignore",
   "author": "Ahmed Tajelsir",
   "license": "MIT",
   "version": "0.0.0",
-  "description": "A package that auto-magically detects and generates suitable `.gitignore` file based on a given directory content. It utilizes official GitHub's [collection] for `.gitignore` templates.",
+  "description": "This package automatically detects and generates suitable `.gitignore` file based on a given directory content. It utilizes official GitHub's [collection] for `.gitignore` templates.",
   "keywords": [
     "git",
     ".gitignore",
