@@ -28,13 +28,14 @@
     "jest": "^20.0.4"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0"
+    "babel-runtime": "^6.23.0",
+    "glob": "^7.1.2"
   },
   "repository": {
     "url": "https://github.com/ahmed-taj/gitignore"
   },
   "jest": {
-    "testRegex": ".*-spec\\.js$",
+    "testRegex": ".*\\.test\\.js$",
     "testEnvironment": "node"
   }
 }
