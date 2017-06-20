@@ -35,7 +35,7 @@
     "url": "https://github.com/ahmed-taj/gitignore"
   },
   "jest": {
-    "testRegex": ".*\\.test\\.js$",
+    "testMatch": ["**/tests/**/*.js?(x)"],
     "testEnvironment": "node"
   }
 }
