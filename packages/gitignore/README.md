@@ -7,7 +7,7 @@ This package automatically detects and generates suitable `.gitignore` file base
 ## Installation
 
 ```sh
-$ npm install --save @ahmed-taj/gitignore
+$ npm install --save gi-pkg
 ```
 
 ## Supported templates
