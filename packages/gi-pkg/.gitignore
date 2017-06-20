@@ -58,4 +58,4 @@ typings/
 .env
 
 # Don't push compiled library
-lib
+/lib
