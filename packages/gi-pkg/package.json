@@ -35,7 +35,6 @@
     "url": "https://github.com/ahmed-taj/gitignore"
   },
   "jest": {
-    "testMatch": ["**/tests/**/*.js?(x)"],
     "testEnvironment": "node"
   }
 }
