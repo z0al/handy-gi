@@ -12,7 +12,8 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "npm run clean && babel src -d lib --copy-files",
+    "clean": "rimraf -rf lib",
     "prepublish": "npm run build",
     "test": "jest"
   },
@@ -35,6 +36,7 @@
     "url": "https://github.com/ahmed-taj/gitignore"
   },
   "jest": {
+    "testMatch": ["**/src/**/*.test.js?(x)"],
     "testEnvironment": "node"
   }
 }
