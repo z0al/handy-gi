@@ -1,7 +1,7 @@
-import ls from '../ls'
+import ls from './ls'
 import { join } from 'path'
 
-const dir = join(__dirname, '..', '..')
+const dir = join(__dirname, '..')
 
 describe('ls', () => {
   it('lists all files', async () => {

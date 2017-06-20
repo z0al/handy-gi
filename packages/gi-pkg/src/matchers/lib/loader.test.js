@@ -1,4 +1,4 @@
-import load from '../loader'
+import load from './loader'
 
 describe('loader', () => {
   it('loads all matchers', async () => {
