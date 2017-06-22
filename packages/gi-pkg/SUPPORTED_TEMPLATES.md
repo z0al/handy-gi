@@ -1,5 +1,5 @@
 ## Supported [.gitignore] templates are:
 
-TODO
+- Node
 
 [.gitignore]: https://github.com/github/gitignore
