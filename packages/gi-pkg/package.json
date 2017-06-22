@@ -40,6 +40,7 @@
     "testMatch": [
       "**/src/**/*.test.js?(x)"
     ],
+    "coverageReporters": ["html", "json", "lcov", "text"],
     "testEnvironment": "node"
   }
 }
