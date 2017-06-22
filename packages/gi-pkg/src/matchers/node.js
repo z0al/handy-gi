@@ -6,6 +6,6 @@ export const info = {
 }
 
 export const match = async (files) => {
-  const matches = filterByGlob('**/package.json', files)
-  return matches.length > 0
+  // can we find 'package.json' ?
+  return filterByGlob('**/package.json', files).length > 0
 }
