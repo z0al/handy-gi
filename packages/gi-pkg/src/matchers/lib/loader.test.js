@@ -1,8 +1,9 @@
 import load from './loader'
 
 describe('loader', () => {
-  it('loads all matchers', async () => {
+  it('loads matchers', async () => {
     const modules = await load()
-    expect(modules).toEqual(['node.js'])
+    const node = modules.filter((m) => { return m.info.template === 'Node' })
+    expect(node).not.toEqual([])
   })
 })
