@@ -1,6 +1,6 @@
 import { info, match } from './node'
 
-describe('Node matcher', () => {
+describe('Node.js', () => {
   it('has "Node.js" as a name', () => {
     expect(info.name).toEqual('Node.js')
   })

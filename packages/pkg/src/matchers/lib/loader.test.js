@@ -1,6 +1,6 @@
 import load from './loader'
 
-describe('loader', () => {
+describe('loader.js', () => {
   const modulesList = [
     expect.objectContaining({
       info: {

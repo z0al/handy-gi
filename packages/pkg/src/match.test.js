@@ -1,6 +1,6 @@
 import match from './match'
 
-describe('match', () => {
+describe('match.js', () => {
   const matchlist = [
     { name: 'Node.js', template: 'Node' }
   ]

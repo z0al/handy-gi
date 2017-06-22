@@ -2,6 +2,8 @@
 
 > Check [handy-gi-cli](https://www.npmjs.com/package/handy-gi-cli) for the command line version
 
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 A node package that automatically detects and generates suitable `.gitignore`
 content based on a given directory content(in addition to some other hacks). It
 utilizes official GitHub's [collection] for `.gitignore` templates.

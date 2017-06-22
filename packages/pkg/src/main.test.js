@@ -1,10 +1,9 @@
-import generate from './generate'
+import { join } from 'path'
+import main from './main'
 
-describe('generate.js', () => {
-  const tempaltesList = [
-    {name: 'Node.js', template: 'Node'}
-  ]
+const rootDir = join(__dirname, '..')
 
+describe('main', () => {
   const gitignore = '### Node.js ###\n\n' +
                     '# Logs\n' +
                     'logs\n' +
@@ -12,9 +11,12 @@ describe('generate.js', () => {
                     'npm-debug.log*\n' +
                     'yarn-debug.log*\n' +
                     'yarn-error.log*'
+  it('throws an error if the path is invalid directory', async () => {
 
-  it('produces a gitignore string from given templates list', async () => {
-    expect(await generate(tempaltesList))
+  })
+
+  it('produces a gitignore string from given path', async () => {
+    expect(await main(rootDir))
       .toEqual(expect.stringContaining(gitignore))
   })
 })

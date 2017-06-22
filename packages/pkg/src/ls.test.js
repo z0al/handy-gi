@@ -3,7 +3,7 @@ import { join } from 'path'
 
 const dir = join(__dirname, '..')
 
-describe('ls', () => {
+describe('ls.js', () => {
   const dirList = [
     'README.md',
     'package.json'
