@@ -2,7 +2,7 @@
   "name": "handy-gi",
   "author": "Ahmed Tajelsir",
   "license": "MIT",
-  "version": "1.0.0-alpha.1",
+  "version": "0.0.0",
   "description": "A node package that automatically detects and generates suitable `.gitignore` content based on a given directory content(in addition to some other hacks). It utilizes official GitHub's [collection] for `.gitignore` templates.",
   "keywords": [
     "git",
