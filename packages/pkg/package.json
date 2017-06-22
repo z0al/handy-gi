@@ -15,7 +15,7 @@
     "build": "npm run clean && babel src -d lib --copy-files",
     "clean": "rimraf -rf lib",
     "prepublish": "npm run build",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "engines": {
     "node": ">=6.10.2",
