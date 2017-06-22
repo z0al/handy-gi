@@ -1,8 +1,8 @@
 import { filterByGlob } from './lib/util'
 
 export const info = {
-  // match the associated file name in github/gitignore
-  name: 'Node'
+  name: 'Node.js',
+  template: 'Node'
 }
 
 export const match = async (files) => {

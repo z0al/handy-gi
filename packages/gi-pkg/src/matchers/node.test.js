@@ -1,6 +1,14 @@
-import { match } from './node'
+import { info, match } from './node'
 
 describe('Node matcher', () => {
+  it('has "Node.js" as a name', () => {
+    expect(info.name).toEqual('Node.js')
+  })
+
+  it('has "Node" as a template name', () => {
+    expect(info.template).toEqual('Node')
+  })
+
   it('matches when a package.json exists', async () => {
     const files = ['package.json']
     expect(await match(files)).toEqual(true)
