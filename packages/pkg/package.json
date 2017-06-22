@@ -15,7 +15,7 @@
     "build": "npm run clean && npm run compile && npm run docs",
     "compile": "babel src -d lib --copy-files",
     "clean": "rimraf -rf lib",
-    "docs": "documentation readme src/index.js --section=Documentation",
+    "docs": "documentation readme src/index.js --section=API",
     "prepublish": "npm run build",
     "test": "jest --coverage"
   },

@@ -11,8 +11,9 @@ describe('main', () => {
                     'npm-debug.log*\n' +
                     'yarn-debug.log*\n' +
                     'yarn-error.log*'
-  it('throws an error if the path is invalid directory', async () => {
 
+  it('throws an error if the path is invalid directory', async () => {
+    // TODO
   })
 
   it('produces a gitignore string from given path', async () => {
