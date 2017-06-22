@@ -15,6 +15,23 @@ const readFile = async (file) => {
   })
 }
 
+/**
+ * Iterate over a list of template pairs to generate a string containing all
+ * corrspondent .gitignore files contents
+ *
+ * @example
+ * generate([name: 'Node.js', template: 'Node'])
+ *  .then(gi => { console.log(gi) })
+ * // outputs the following string
+ * // ### Node.js ###
+ * // # Logs
+ * // logs
+ * // .log
+ * // ...
+ *
+ * @param  {Array}  tempaltesList  of {name, template} pairs of target templates
+ * @return {Promise}               with the full .gitignore string
+ */
 const generate = async (tempaltesList) => {
   let gitignore = ''
 

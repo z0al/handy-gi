@@ -1,5 +1,17 @@
 import { load } from './matchers/lib'
 
+/**
+ * Matches the given files list against all available matchers
+ *
+ * @example
+ * match(['README.md', 'package.json'])
+ *  .then(matchers => { console.log(matchers) })
+ * // outputs: [{name: 'Node.js', template: 'Node'}]
+ *
+ * @param  {Array}  files  to match against
+ * @return {Promise}       with an array of { name, tempalte} of the
+ *                         corresponding matchers
+ */
 const match = async (files) => {
   let modules = await load()
   let matchlist = []

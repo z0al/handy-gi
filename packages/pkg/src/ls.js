@@ -17,10 +17,12 @@ import { exclude as exclusionList } from './config.json'
  * Also, it doesn't follow symbolic links!
  *
  * @example
- * var files = await ls('path/to/my/node/module')
+ * ls('path/to/my/node/module')
+ *  .then(files => { console.log(files) })
  * // outputs(e.g): ['package.json','src/index.js', ...]
  *
- * var files = await ls('path/to/my/node/module', ['package.json'])
+ * ls('path/to/my/node/module', ['package.json'])
+ *  .then(files => { console.log(files) })
  * // outputs(e.g): ['src/index.js', ...]
  *
  * @param  {String}  dir            target directory
