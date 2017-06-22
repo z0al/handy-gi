@@ -1,9 +1,19 @@
 import load from './loader'
 
 describe('loader', () => {
+  const modulesList = [
+    expect.objectContaining({
+      info: {
+        name: 'Node.js',
+        template: 'Node'
+      },
+      match: expect.any(Function)
+    })
+  ]
+
   it('loads matchers', async () => {
-    const modules = await load()
-    const node = modules.filter((m) => { return m.info.template === 'Node' })
-    expect(node).not.toEqual([])
+    expect(await load()).toEqual(
+      expect.arrayContaining(modulesList)
+    )
   })
 })

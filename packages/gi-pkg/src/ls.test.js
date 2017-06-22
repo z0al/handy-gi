@@ -4,13 +4,21 @@ import { join } from 'path'
 const dir = join(__dirname, '..')
 
 describe('ls', () => {
+  const dirList = [
+    'README.md',
+    'package.json'
+  ]
+
   it('lists all files', async () => {
     const files = await ls(dir)
-    expect(files).not.toEqual([])
+    expect(files).toEqual(
+      expect.arrayContaining(dirList)
+    )
   })
   it('ignores given patterns', async () => {
     const files = await ls(dir, ['package.json'])
-    expect(files.indexOf('node_modules/jest')).toEqual(-1)
-    expect(files.indexOf('package.json')).toEqual(-1)
+    expect(files).not.toEqual(
+      expect.arrayContaining(dirList)
+    )
   })
 })

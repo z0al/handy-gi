@@ -9,7 +9,7 @@ describe('Node matcher', () => {
     expect(info.template).toEqual('Node')
   })
 
-  it('matches when a package.json exists', async () => {
+  it('matches only when a package.json exists', async () => {
     const files = ['package.json']
     expect(await match(files)).toEqual(true)
 
