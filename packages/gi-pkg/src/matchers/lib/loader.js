@@ -3,7 +3,7 @@ import ls from '../../ls'
 
 const baseDir = join(__dirname, '..')
 
-export default async () => {
+const load = async () => {
   // Ignores *.test.js files and lib folder
   const list = await ls(baseDir, ['!**/*.js', '**/*.test.js', 'lib/**'])
 
@@ -13,3 +13,5 @@ export default async () => {
   }
   return modules
 }
+
+export default load

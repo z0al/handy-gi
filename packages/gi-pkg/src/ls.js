@@ -1,7 +1,7 @@
 import glob from 'glob'
 import { exclude } from './config.json'
 
-export default async (dir, ignore = []) => {
+const ls = async (dir, ignore = []) => {
   return new Promise(resolve => {
     glob('*',
       {ignore: [...ignore, ...exclude], cwd: dir, follow: false},
@@ -12,3 +12,5 @@ export default async (dir, ignore = []) => {
     )
   })
 }
+
+export default ls
