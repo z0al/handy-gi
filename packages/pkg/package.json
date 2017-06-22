@@ -1,5 +1,5 @@
 {
-  "name": "gi-pkg",
+  "name": "handy-gi",
   "author": "Ahmed Tajelsir",
   "license": "MIT",
   "version": "0.0.0",
@@ -34,7 +34,7 @@
     "minimatch": "^3.0.4"
   },
   "repository": {
-    "url": "https://github.com/ahmed-taj/gitignore"
+    "url": "https://github.com/ahmed-taj/handy-gi"
   },
   "jest": {
     "testMatch": [

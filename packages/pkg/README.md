@@ -1,0 +1,34 @@
+# Handy `.gitignore` generator
+
+> Check [handy-gi-cli] for the command line version
+
+A node package that automatically detects and generates suitable `.gitignore`
+content based on a given directory content(in addition to some other hacks). It
+utilizes official GitHub's [collection] for `.gitignore` templates.
+
+
+## Installation
+
+```sh
+$ npm install --save handy-gi
+```
+
+## Supported templates
+
+See [templates] folder to see which of the GitHub's [collection] templates are
+currently supported.
+
+[collection]: https://github.com/github/gitignore
+[templates]: ./src/templates
+
+## Tests
+
+```sh
+$ cd <to/handy-gi/dir>
+$ cd packages/pkg
+$ npm test
+```
+
+## License
+
+MIT
