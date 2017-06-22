@@ -3,7 +3,7 @@
   "author": "Ahmed Tajelsir",
   "license": "MIT",
   "version": "0.0.0",
-  "description": "This package automatically detects and generates suitable `.gitignore` file based on a given directory content. It utilizes official GitHub's [collection] for `.gitignore` templates.",
+  "description": "A node package that automatically detects and generates suitable `.gitignore` content based on a given directory content(in addition to some other hacks). It utilizes official GitHub's [collection] for `.gitignore` templates.",
   "keywords": [
     "git",
     ".gitignore",
