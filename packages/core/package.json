@@ -9,12 +9,12 @@
     "github",
     "git-ignore"
   ],
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "npm run clean && npm run compile && npm run docs",
-    "compile": "babel src -d lib --copy-files",
-    "clean": "rimraf -rf lib",
-    "docs": "documentation readme src/index.js --section=Modules",
+    "build": "npm run build:src && npm run build:docs",
+    "build:src": "babel src -d dist --copy-files --ignore '*.test.js'",
+    "prebuild:src": "rimraf -rf dist",
+    "build:docs": "documentation readme src/index.js --section=Modules",
     "prepublish": "npm run build",
     "test": "jest --coverage"
   },
@@ -31,13 +31,16 @@
     "jest": "^20.0.4"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0",
     "glob": "^7.1.2",
     "minimatch": "^3.0.4"
   },
   "repository": {
     "url": "https://github.com/ahmed-taj/handy-gi/tree/master/packages/core"
   },
+  "files":[
+    "dist",
+    "README.md"
+  ],
   "jest": {
     "testMatch": [
       "**/src/**/*.test.js?(x)"
