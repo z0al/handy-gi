@@ -37,7 +37,7 @@
     "minimatch": "^3.0.4"
   },
   "repository": {
-    "url": "https://github.com/ahmed-taj/handy-gi/tree/master/packages/pkg"
+    "url": "https://github.com/ahmed-taj/handy-gi/tree/master/packages/core"
   },
   "jest": {
     "testMatch": [
