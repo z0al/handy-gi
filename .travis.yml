@@ -1,0 +1,25 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+
+git:
+  depth: 1
+
+notifications:
+  email: false
+
+branches:
+  only:
+  - master
+
+node_js:
+  - "6"
+  - "7"
+  - "8"
+
+
+script: npm test && npm run lint
+
+after_success: scripts/release_ci.sh

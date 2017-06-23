@@ -2,16 +2,31 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "commit": "git-cz",
+    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
+    "postinstall": "lerna bootstrap",
+    "precommit": "npm run test && npm run lint",
+    "commitmsg": "validate-commit-msg",
     "test": "lerna run test",
     "lint": "eslint packages"
   },
   "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-lerna-changelog": "^1.2.1",
     "eslint": "^4.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "lerna": "^2.0.0-rc.5"
+    "husky": "^0.14.0",
+    "lerna": "^2.0.0-rc.5",
+    "lerna-semantic-release": "^9.1.0",
+    "validate-commit-msg": "^2.12.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
