@@ -22,4 +22,4 @@ node_js:
 
 script: npm test && npm run lint
 
-after_success: scripts/release_ci.sh
+after_success: scripts/release.sh
