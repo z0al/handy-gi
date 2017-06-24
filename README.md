@@ -60,9 +60,9 @@ After checking all matchers, then Handy-gi concatenate and build the final
 `.gitignore` string for you!
 
 
-- [matchers]: ./lib/matchers
-- [Node.js]: http://nodejs.org
-- [matcher]: ./lib/matchers/node.js
+[matchers]: ./lib/matchers
+[Node.js]: http://nodejs.org
+[matcher]: ./lib/matchers/node.js
 
 ## Usage
 
