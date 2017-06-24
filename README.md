@@ -5,6 +5,7 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 [![Build Status](https://travis-ci.org/ahmed-taj/handy-gi.svg?branch=master)](https://travis-ci.org/ahmed-taj/handy-gi)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/handy-gi.svg)](https://greenkeeper.io/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 A node package that automatically detects and generates suitable `.gitignore`

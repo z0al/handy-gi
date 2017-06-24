@@ -5,6 +5,11 @@ cache:
     - node_modules
 notifications:
   email: false
+branches:
+  only:
+  - master
+  - /^greenkeeper/.*$/
+
 node_js:
   - '8'
   - '7'
@@ -15,6 +20,3 @@ script:
   - npm test
 after_success:
   - npm run semantic-release
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
