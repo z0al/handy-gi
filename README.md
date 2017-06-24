@@ -23,7 +23,7 @@ $ npm install --save handy-gi
 Handy-gi simply runs a bunch of checkers (called [matchers]) against the given
 directory, a matcher is a simple JavaScript code that tries to infer whether
 the contents of that directory matches its specification or not. Take a look at
-the [Node.js] [matcher] as an example:
+the [Node.js][matcher] as an example:
 
 ```javascript
 // a couple of imports ...
@@ -33,10 +33,9 @@ export const info = {
 
   template: 'Node', // must match the file name (with ext) of the official
                     // GitHub's collection.
-                    // See: https://github.com/github/gitignore
 
-  global: false     // whether or not the .gitignore file lives inside 'templates/Global' folder
-                    // See: https://github.com/github/gitignore/tree/master/Global
+  global: false     // whether or not the .gitignore file lives inside
+                    // 'templates/Global' folder
 }
 
 export const match = async (files) => {
@@ -46,22 +45,23 @@ export const match = async (files) => {
   // Try to find 'package.json' ?
   const matches = filterByGlob(pattern, files)
 
-  // did we?
+  // Did we?
   return matches.length > 0
 }
-
 ```
 
 See! very simple
 
-> NOTE: matchers can also perform other checks, such as OS, available editors..etc
+> NOTE: matchers can also perform other checks, such as OS, available editors
+> ..etc
 
-After checking all matchers, then Handy-gi concatenate and build the final
-`.gitignore` string for you!
-
+After finding all matches, Handy-gi then will build the final `.gitignore`
+string for you :)
 
 [matchers]: ./lib/matchers
-[Node.js]: http://nodejs.org
+
+[node.js]: http://nodejs.org
+
 [matcher]: ./lib/matchers/node.js
 
 ## Usage
@@ -90,8 +90,8 @@ currently supported.
 
 ### generate
 
-Iterate over a list of template pairs to generate a string containing all
-corrspondent .gitignore files contents
+Asynchronously iterate over a list of template pairs to generate a string
+containing all corrspondent .gitignore files contents
 
 **Parameters**
 
@@ -114,7 +114,7 @@ Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### match
 
-Matches the given files list against all available matchers
+Asynchronously matches the given files list against all available matchers
 
 **Parameters**
 
