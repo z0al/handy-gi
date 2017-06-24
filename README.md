@@ -82,7 +82,7 @@ currently supported.
 
 [collection]: https://github.com/github/gitignore
 
-[templates]: ./lib/templates
+[templates]: ./templates
 
 ## Modules
 
