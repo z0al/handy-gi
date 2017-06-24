@@ -14,7 +14,7 @@
     "build": "npm run build:lib && npm run build:docs",
     "build:docs": "documentation readme index.js --section=Modules",
     "build:lib": "babel lib -d dist --copy-files --ignore '*.test.js'",
-    "commit": "git-cz",
+    "co": "git-cz",
     "commitmsg": "validate-commit-msg",
     "lint": "eslint .",
     "prebuild": "rimraf -rf dist",
