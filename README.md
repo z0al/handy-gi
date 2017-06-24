@@ -131,41 +131,6 @@ match(['README.md', 'package.json'])
 Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** with an array of { name, tempalte} of the
                         corresponding matchers
 
-### ls
-
-Asynchronous glob-based directory listing
-
-NOTE: For better performance we implicitly exclude the **content** of these
-folders:
-
--   `node_modules`
--   `.git`
--   `.svn`
-
-However, you would still gets their names listed, e.g: node_modules,
-which enables us to perform matching checks as neccessary.
-
-Also, it doesn't follow symbolic links!
-
-**Parameters**
-
--   `dir` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** target directory
--   `exclude` **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** of glob patterns to exclude (optional, default `[]`)
-
-**Examples**
-
-```javascript
-ls('path/to/my/node/module')
- .then(files => { console.log(files) })
-// outputs(e.g): ['package.json','src/index.js', ...]
-
-ls('path/to/my/node/module', ['package.json'])
- .then(files => { console.log(files) })
-// outputs(e.g): ['src/index.js', ...]
-```
-
-Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** with folders/files list in `dir`
-
 ## License
 
 MIT © [Ahmed Tajelsir](https://github.com/ahmed-taj)
