@@ -3,24 +3,20 @@ language: node_js
 cache:
   directories:
     - node_modules
-
-git:
-  depth: 1
-
 notifications:
   email: false
-
 branches:
   only:
   - master
   - /^greenkeeper/.*$/
 
 node_js:
-  - "6"
-  - "7"
-  - "8"
-
-
-script: npm test && npm run lint
-
-after_success: scripts/release.sh
+  - '8'
+  - '7'
+  - '6'
+before_script:
+  - npm prune
+script:
+  - npm test
+after_success:
+  - npm run semantic-release
