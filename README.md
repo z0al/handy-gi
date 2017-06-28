@@ -100,7 +100,7 @@ containing all corrspondent .gitignore files contents
 **Examples**
 
 ```javascript
-generate([name: 'Node.js', template: 'Node'])
+generate([{name: 'Node.js', template: 'Node'}])
  .then(gi => { console.log(gi) })
 // outputs the following string
 // ### Node.js ###
