@@ -67,9 +67,9 @@ string for you :)
 ## Usage
 
 ```js
-var gi = require('handy-gi')
+var gi = require('handy-gi').ignore
 
-gi('path/to/your/target/folder')
+gi.ignore('path/to/your/target/folder')
   .then((gitignore) => {
     // Do what you want with the produced .gitignore string
   })
