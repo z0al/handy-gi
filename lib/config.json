@@ -1,4 +1,6 @@
 {
+  "//": "Add any folder that my slow down listing files and its contents isn't",
+  "//": "neccessary for matchers",
   "exclude":[
     "**/node_modules/**/*",
     "**/.git/**/*",
