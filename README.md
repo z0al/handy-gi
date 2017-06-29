@@ -44,7 +44,7 @@ export const match = async (files) => {
   const pattern = '**/package.json'
 
   // Try to find 'package.json' ?
-  const matches = filter.byGlob(pattern, files)
+  const matches = files.filter(byGlob(pattern))
 
   // Did we?
   return matches.length > 0
