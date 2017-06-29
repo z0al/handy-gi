@@ -7,6 +7,7 @@
 [![Build Status](https://travis-ci.org/ahmed-taj/handy-gi.svg?branch=master)](https://travis-ci.org/ahmed-taj/handy-gi)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/handy-gi.svg)](https://greenkeeper.io/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm](https://img.shields.io/npm/v/handy-gi.svg)](https://npm.im/handy-gi)
 
 A package that automatically generates a suitable `.gitignore` string that fits your needs by detecting the directory contents, OS, Text editors and so on ...etc.
 
