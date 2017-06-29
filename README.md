@@ -8,9 +8,9 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/ahmed-taj/handy-gi.svg)](https://greenkeeper.io/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-A package that automatically detects and generates suitable `.gitignore` string
-based on a given directory contents(it also perform other magical checks). It
-utilizes official GitHub's [collection] for `.gitignore` templates.
+A package that automatically generates a suitable `.gitignore` string that fits your needs by detecting the directory contents, OS, Text editors and so on ...etc.
+
+It utilizes official GitHub’s [collection] `.gitignore` templates.
 
 ## Installation
 
