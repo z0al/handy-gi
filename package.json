@@ -13,7 +13,7 @@
   "scripts": {
     "build": "npm run build:lib && npm run build:docs",
     "build:docs": "documentation readme ./lib/index.js --section=Modules",
-    "build:lib": "babel ./lib  -d ./dist --copy-files --ignore *.test.js",
+    "build:lib": "babel ./lib  -d ./dist --copy-files --ignore *.test.js,**/__mocks__/*",
     "check-coverage": "istanbul check-coverage --statements 95 --functions 100",
     "co": "git-cz",
     "commitmsg": "validate-commit-msg",
