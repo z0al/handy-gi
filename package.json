@@ -48,6 +48,7 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
+    "command-exists": "^1.2.2",
     "glob": "^7.1.2",
     "minimatch": "^3.0.4"
   },
