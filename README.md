@@ -91,7 +91,7 @@ currently supported.
 
 ### generate
 
-Asynchronously iterate over a list of template pairs to generate a string
+Iterate over a list of template pairs to generate a string
 containing all corrspondent .gitignore files contents
 
 **Parameters**
