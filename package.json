@@ -45,7 +45,7 @@
     "istanbul": "^0.4.5",
     "jest": "^20.0.4",
     "semantic-release": "^6.3.6",
-    "validate-commit-msg": "^2.12.2"
+    "validate-commit-msg": "^2.14.0"
   },
   "dependencies": {
     "command-exists": "^1.2.2",
