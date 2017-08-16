@@ -30,7 +30,7 @@
     "npm": ">=3.10.10"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "6.24.1",
     "babel-preset-env": "^1.5.2",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
