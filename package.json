@@ -43,7 +43,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.0",
     "istanbul": "^0.4.5",
-    "jest": "^21.0.0",
+    "jest": "^22.0.0",
     "semantic-release": "^8.0.0",
     "validate-commit-msg": "^2.14.0"
   },
