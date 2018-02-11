@@ -38,13 +38,13 @@
     "eslint": "^4.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.0",
     "istanbul": "^0.4.5",
     "jest": "^22.0.0",
-    "semantic-release": "^8.0.0",
+    "semantic-release": "^11.0.2",
     "validate-commit-msg": "^2.14.0"
   },
   "dependencies": {
