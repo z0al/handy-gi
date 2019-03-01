@@ -1,3 +1,5 @@
+> **Warning:** Not maintained, use ignr instead.
+
 # Handy `.gitignore` generator
 
 > Check [handy-gi-cli](https://github.com/ahmed-taj/handy-gi-cli) for the command line version
