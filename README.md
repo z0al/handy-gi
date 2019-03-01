@@ -1,4 +1,4 @@
-> **Warning:** Not maintained, use ignr instead.
+> **Warning:** Not maintained, use [ignr](https://github.com/z0al/ignr) instead.
 
 # Handy `.gitignore` generator
 
